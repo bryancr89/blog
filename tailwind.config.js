@@ -10,8 +10,11 @@ module.exports = {
         padding: "2rem",
       },
       fontFamily: {
-        inter: ["Roboto"],
+        roboto: ["Roboto"],
       },
+      fontSize: {
+        xs: '.55rem',
+      }
     },
   },
   plugins: [],

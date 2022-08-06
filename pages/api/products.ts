@@ -1,15 +1,33 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
+export enum Status {
+  NEW = "new",
+  COMING_SOON = 'Comming Soon',
+  DONE = 'Done'
+}
 
 export type Product = {
   name: string;
   description: string;
   img: string;
   url: string;
-  type: 'blog' | 'handbook' | 'software' | 'writing'
+  type: 'blog' | 'handbook' | 'software' | 'writing',
+  status: Status
 };
 
 export const getProducts = (): Product[] => [
-  { name: 'Newsletter',  type: 'writing', description: '', img: '', url: ''},
-  { name: 'Scaling React Application', type: 'handbook', description: '', img: '', url: ''}
-]
+  {
+    name: "Newsletter",
+    type: "writing",
+    description: "",
+    img: "newsletter.png",
+    url: "",
+    status: Status.DONE,
+  },
+  {
+    name: "Scaling React Application",
+    type: "handbook",
+    description: "",
+    img: "react.png",
+    url: "",
+    status: Status.COMING_SOON,
+  },
+];
