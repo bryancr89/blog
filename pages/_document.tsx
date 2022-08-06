@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { MainNavigation } from './components/MainNavigation'
+import { MainNavigation } from '../components/MainNavigation'
 
 class MyDocument extends Document {
   render() {

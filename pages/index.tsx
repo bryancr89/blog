@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import { getProducts, Product } from "./api/products";
-import { ProductCard } from "./components/ProductCard";
+import { getProducts, Product } from "../api/products";
+import { ProductCard } from "../components/ProductCard";
 
 export async function getStaticProps() {
   return {

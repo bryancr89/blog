@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Product, Status } from "../api/products"
+import { Product } from "../api/products"
 import { ProductBadge } from './ProductBadge';
 
 type ProductCardProps = {
