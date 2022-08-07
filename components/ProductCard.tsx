@@ -9,7 +9,7 @@ type ProductCardProps = {
 export const ProductCard = ({ product }: ProductCardProps) => (
   <a
     href={product.url}
-    className="shadow shadow-slate-300 flex flex-col justify-between border border-solid border-slate-300 bg-slate-200 mx-2 p-4 rounded-sm w-1/5 text-center hover:bg-slate-100 relative hover:-translate-y-1 transition pt-4"
+    className="shadow shadow-slate-300 flex flex-col justify-between border border-solid border-slate-300 bg-slate-200 mx-2 p-4 rounded-sm w-5/6 sm:w-1/5 text-center hover:bg-slate-100 relative hover:-translate-y-1 transition pt-4 mb-2"
   >
     <div>
       <Image

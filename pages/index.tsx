@@ -23,13 +23,13 @@ const Home: NextPage<HomeProps> = ({ products }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="text-center lg:pb-16 pt-8 bg-white">
-        <h1 className="font-bold text-5xl text-sky-800">Bryan Azofeifa</h1>
-        <h3 className="mt-6 text-lg">Helping developers get to the next level 🚀</h3>
+      <header className="text-center pt-8 pb-12 lg:pb-16 bg-white">
+        <h1 className="font-bold text-3xl lg:text-5xl text-sky-800">Bryan Azofeifa</h1>
+        <h3 className="mt-2 lg:mt-6 text-md lg:text-lg">Helping developers get to the next level 🚀</h3>
       </header>
 
       <main className="mx-auto">
-        <div className="text-left mt-10 flex justify-center">
+        <div className="text-left mt-10 flex flex-col sm:flex-row justify-center items-center">
           {products.map((product) => (
             <ProductCard key={product.name} product={product} />
           ))}
@@ -38,12 +38,12 @@ const Home: NextPage<HomeProps> = ({ products }) => {
         <div className="container mx-auto">
           <div className="my-8">
             <h3 className="text-2xl py-4">Latests blog posts</h3>
-            <ul className="flex">
-              <li className="w-1/3 border border-solid rounded-md border-slate-300 p-4 mb-4 mr-2">
+            <ul className="flex flex-col sm:flex-row">
+              <li className="w-full sm:w-1/3 border border-solid rounded-md border-slate-300 p-4 mb-4 mr-2">
                 <h3 className="text-xl text-sky-800 pb-2">
                   How to become a better developer
                 </h3>
-                <p>
+                <p className="text-justify">
                   In order to become a better developer, it is important to
                   understand the technologies you use, read code, and learn from
                   others. Additionally, it is beneficial to care about code
@@ -53,11 +53,11 @@ const Home: NextPage<HomeProps> = ({ products }) => {
                   </span>
                 </p>
               </li>
-              <li className="w-1/3 border border-solid rounded-md border-slate-300 p-4 mb-4">
+              <li className="w-full sm:w-1/3 border border-solid rounded-md border-slate-300 p-4 mb-4">
                 <h3 className="text-xl text-sky-800 pb-2">
                   My Journey: 14 years of writing code
                 </h3>
-                <p>
+                <p className="text-justify">
                   At 19 years old, I had to create an email address for the
                   first time in order to fill out a university registry
                   form...&nbsp;
@@ -71,8 +71,8 @@ const Home: NextPage<HomeProps> = ({ products }) => {
 
           <div>
             <h3 className="text-2xl py-4">Newsletter</h3>
-            <p className="py-2">Get notified when new stuff is released! ❤️️</p>
-            <div className="border border-solid border-gray-600 inline-block">
+            <p className="py-2">Get notified when new stuff is released ❤️️</p>
+            <div className="sm:border sm:border-solid border-gray-600 inline-block">
               <input
                 className="p-2 rounded-sm w-52"
                 placeholder="Email"
