@@ -74,11 +74,11 @@ const Home: NextPage<HomeProps> = ({ products }) => {
             <p className="py-2">Get notified when new stuff is released ❤️️</p>
             <div className="sm:border sm:border-solid border-gray-600 inline-block">
               <input
-                className="p-2 rounded-sm w-52"
+                className="p-2 rounded-sm w-full sm:w-52 mb-2 sm:mb-0"
                 placeholder="Email"
                 type="email"
               ></input>
-              <button className="p-2 bg-sky-800 text-white hover:bg-sky-600">Subscribe</button>
+              <button className="p-2 w-full sm:w-auto bg-sky-800 text-white hover:bg-sky-600">Subscribe</button>
             </div>
             <p className="py-2 text-sm">I write once a month.</p>
           </div>
