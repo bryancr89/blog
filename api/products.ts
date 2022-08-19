@@ -9,25 +9,25 @@ export type Product = {
   description: string;
   img: string;
   url: string;
-  type: 'blog' | 'handbook' | 'software' | 'writing',
+  type: 'blog' | 'handbook' | 'software' | 'writing' | 'coaching',
   status: Status
 };
 
 export const getProducts = (): Product[] => [
   {
-    name: "Newsletter",
-    type: "writing",
+    name: "Mentoring",
+    type: "coaching",
     description: "",
-    img: "newsletter.png",
-    url: "",
+    img: "code-mentor.png",
+    url: "/mentoring",
     status: Status.DONE,
   },
   {
     name: "Scaling React Application",
     type: "handbook",
     description: "",
-    img: "react.png",
-    url: "",
+    img: "react.svg",
+    url: "/scaling-react-app",
     status: Status.COMING_SOON,
   },
 ];
