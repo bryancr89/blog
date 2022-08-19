@@ -41,7 +41,7 @@ const Home: NextPage<HomeProps> = ({ products }) => {
       </header>
 
       <main className="mx-auto">
-        <div className="text-left sm:mt-10 flex flex-col sm:flex-row justify-center items-stretch">
+        <div className="text-left sm:mt-10 flex flex-col sm:flex-row justify-center items-center sm:items-stretch">
           {products.map((product) => (
             <ProductCard key={product.name} product={product} />
           ))}
